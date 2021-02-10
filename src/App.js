@@ -42,12 +42,12 @@ class App extends React.Component{
 
     return(
       <div className="App">
-        <h1>{this.state.user.login}</h1>
+        <h1><a href="https://github.com/n0tybynature">{this.state.user.login}</a></h1>
         <div className="myDiv">
           <img src={this.state.user.avatar_url} alt="myimg"/>
           <p>{this.state.user.bio}</p>
         </div>
-        <div className="userdiv">
+        <div className="flowdiv">
           <h2>My Followers:</h2>
 
           {this.state.followers.map((follower) => {
